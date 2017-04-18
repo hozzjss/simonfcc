@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div class="wrapper">
+  <h1>Simon</h1>
+  <div>
+    <audio src=""></audio>
+    <div class="board">
+      <app-tile *ngFor="let tile of tiles" [tile]="tile"></app-tile>
+    </div>
+    <div class="controls">
+      <div class="count">{{ tileService.winningCount.count }}</div>
+      <button (click)="start()" class="start">Start</button>
+      <button (click)="reset()" class="reset">Reset</button>
+    </div>
+  </div>
+</div>
