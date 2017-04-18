@@ -13,6 +13,7 @@ import { TileService } from './tile.service'
   ],
   imports: [
     BrowserModule,
+
   ],
   providers: [TileService],
   bootstrap: [AppComponent]

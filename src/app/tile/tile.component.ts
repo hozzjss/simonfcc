@@ -18,7 +18,7 @@ export class TileComponent implements OnInit {
   }
   handleClick() {
     this.play()
-    this.tileService.addToUserMem(this.tile)
+    this.tileService.handleClick(this.tile)
   }
   play(): TileComponent {
     this.tileService.play(this.tile.sound)
