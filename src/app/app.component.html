@@ -13,5 +13,12 @@
       <button (click)="start()" class="start">Start</button>
       <button (click)="reset()" class="reset">Reset</button>
     </div>
+    <div>
+      <button class="strict">
+        <input (change)="tileService.strictSwitch()"
+         id="strict" type="checkbox">
+        <label for="strict">Strict</label>
+      </button>
+    </div>
   </div>
 </div>

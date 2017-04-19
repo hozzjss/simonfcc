@@ -52,3 +52,18 @@ h1 {
 .reset {
         left: 180px;
 }
+
+.strict {
+    position: absolute;
+    top: 250px;
+    left: 110px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+}
+.strict input {
+    margin: 0;
+}
+.strict label {
+    margin: 3px;
+}
