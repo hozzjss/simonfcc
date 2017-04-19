@@ -14,6 +14,9 @@ export class AppComponent implements OnInit {
   reset() {
     this.tileService.reset()
   }
+  strictSwitch() {
+    this.tileService.strictSwitch()
+  }
   tiles: Tile[] = tiles
   ngOnInit(): void {
     this.tileService.audioElAdd(document.querySelector("audio"))

@@ -8,7 +8,8 @@ import { TileService } from "../tile.service";
 })
 export class TileComponent implements OnInit {
   // this allows app component to pass tile data here
-  // like color sound and any other stuff that might be lying in our model 
+  // like color sound and any other stuff that might be lying in our model
+  // coz we'll be using *NgFor
   @Input() tile: Tile
   color: string
   constructor(private tileService: TileService) { }

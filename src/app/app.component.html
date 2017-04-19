@@ -1,6 +1,7 @@
+<app-confetti *ngIf="tileService.winningCount >= 20"></app-confetti>
 <div class="wrapper">
   <h1>
-    {{ tileService.winningCount !== 20 ? "Simon" : "Won" }}
+    {{ tileService.winningCount < 20 ? "Simon" : "You Won!!" }}
   </h1>
   
   <div>
@@ -15,7 +16,7 @@
     </div>
     <div>
       <button class="strict">
-        <input (change)="tileService.strictSwitch()"
+        <input (change)="strictSwitch()"
          id="strict" type="checkbox">
         <label for="strict">Strict</label>
       </button>
